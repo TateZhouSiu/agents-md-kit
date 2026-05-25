@@ -27,6 +27,12 @@ agent_memory/
 
 `agent_memory/archive/` 只创建目录，三个 `.md` 从 `templates/agent_memory/` 原样复制。
 
+## 运行环境
+
+AgentsMD Kit 是纯 Markdown，macOS、Linux、WSL2 和 Windows 都可以使用，没有 package install 步骤。
+
+模板本身不绑定模型，但大型仓库、长时间排查和需要证据追踪的任务会明显受益于更强 reasoning。作者已验证的重型工作流画像是：Codex 风格本地 agent、可读写文件、可执行命令、GPT-5.5 级别 reasoning model，并在可用时使用 `high` 或 `xhigh` reasoning。
+
 ## 与 Multi-Agent Skill 的关系
 
 `AGENTS.md` 是项目级定位：告诉 agent 在这个仓库里如何工作。

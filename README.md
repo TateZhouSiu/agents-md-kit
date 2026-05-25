@@ -37,6 +37,12 @@ agent_memory/
 
 Create `agent_memory/archive/` as an empty directory. Copy the three templates unchanged, then let the agent fill them during work.
 
+## Runtime Fit
+
+AgentsMD Kit is plain Markdown and works on macOS, Linux, WSL2, and Windows. It has no package install step.
+
+The template is model-agnostic, but stronger reasoning improves outcomes on large repositories, long debugging sessions, and tasks that require evidence tracking. For workflows like the author's, a Codex-style local agent with file access, command execution, and a GPT-5.5-class reasoning model at `high` or `xhigh` reasoning is the known-good profile.
+
 ## Relationship To Multi-Agent Skill
 
 `AGENTS.md` is project orientation. It answers: how should an agent behave in this repository?
