@@ -43,6 +43,20 @@ AgentsMD Kit is plain Markdown and works on macOS, Linux, WSL2, and Windows. It 
 
 The template is model-agnostic, but stronger reasoning improves outcomes on large repositories, long debugging sessions, and tasks that require evidence tracking. For workflows like the author's, a Codex-style local agent with file access, command execution, and a GPT-5.5-class reasoning model at `high` or `xhigh` reasoning is the known-good profile.
 
+## Verification Checklist
+
+After copying the kit into a project, confirm these files exist:
+
+```text
+AGENTS.md
+agent_memory/context.md
+agent_memory/progress.md
+agent_memory/bugs.md
+agent_memory/archive/
+```
+
+Keep `archive/` as a directory. The three active memory files should start from the templates in this repository, then be updated by the agent during real work.
+
 ## Relationship To Multi-Agent Skill
 
 `AGENTS.md` is project orientation. It answers: how should an agent behave in this repository?
